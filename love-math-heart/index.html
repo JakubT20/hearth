@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mám ťa rád</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>Mám ťa rád</h1>
+
+      <div class="heart-wrap">
+        <canvas id="heartCanvas" width="640" height="640" aria-label="Animované srdce"></canvas>
+      </div>
+
+      <p class="question">Pôjdeš so mnou na rande?</p>
+
+      <div class="actions">
+        <button id="yesBtn" class="btn yes" type="button">Áno</button>
+        <button id="noBtn" class="btn no" type="button">Nie</button>
+      </div>
+
+      <p id="status" class="status" aria-live="polite">Čakám na odpoveď...</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
